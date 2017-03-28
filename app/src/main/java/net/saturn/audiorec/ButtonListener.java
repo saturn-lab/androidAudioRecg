@@ -27,13 +27,12 @@ public class ButtonListener implements View.OnTouchListener {
         if(v.getId() == R.id.recording){
             TextView result = (TextView) this.activity.findViewById(R.id.result);
             if(event.getAction() == MotionEvent.ACTION_DOWN){
-                result.setText("You Press The Button");
+                result.setText("正在录音...");
                 RecordTask r_task = new RecordTask();
                 r_task.execute();
                 isRecording = true;
             }
             else if(event.getAction() == MotionEvent.ACTION_UP) {
-                result.setText("You Move Away");
                 isRecording = false;
             }
         }
@@ -77,7 +76,7 @@ public class ButtonListener implements View.OnTouchListener {
             short[] trueBuffer = new short[length];
             System.arraycopy(buffer,0,trueBuffer,0,length);
 
-            result.setText(AudioSpeechRecognition.recognize(trueBuffer));
+            result.setText("识别结果：" + AudioSpeechRecognition.recognize(trueBuffer));
         }
 
         @Override
