@@ -11,7 +11,7 @@ public class AudioSpeechRecognition {
 
     static public final int CLASS_NUM = 24;
     static public final String INPUT_NAME = "input_1";
-    static public final String[] OUTPUT_NAME = new String[] {"Softmax"};
+    static public final String[] OUTPUT_NAME = new String[] {"dense_2/Softmax"};
 
     static public final String[] sentences = {
             "蓝牙开机", "蓝牙拨打电话", "蓝牙打电话", "蓝牙接听电话",
