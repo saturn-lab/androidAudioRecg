@@ -27,14 +27,11 @@
         android:id="@+id/recording"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
         android:fontFamily="sans-serif"
         android:text="按住录音"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageView" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -46,4 +43,14 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="100dp"
         app:srcCompat="@drawable/icenter" />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignParentBottom="true"
+        android:text="   关于   "
+        android:textSize="24sp"
+        android:typeface="normal" />
 </RelativeLayout>

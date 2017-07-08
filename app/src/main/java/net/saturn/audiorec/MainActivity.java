@@ -18,8 +18,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Button record = (Button)findViewById(R.id.recording);
         record.setOnTouchListener(new ButtonListener(this));
+
+        Button about = (Button) findViewById(R.id.about);
+        about.setOnClickListener(new AboutListener(this));
 
         askForPermission();
         TensorFlowInferenceInterface tfInterface = new TensorFlowInferenceInterface(getAssets(),
