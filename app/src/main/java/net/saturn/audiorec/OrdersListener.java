@@ -10,7 +10,7 @@ import android.view.View;
 
 public class OrdersListener implements View.OnClickListener {
     public MainActivity activity;
-    static public String message = "指令列表:\n" +
+    static public String message =
             "蓝牙开机, 蓝牙拨打电话, 蓝牙打电话, 蓝牙接听电话,\n" +
             "蓝牙接电话, 蓝牙拒接, 蓝牙播放音乐, 蓝牙开始音乐,\n" +
             "蓝牙暂停音乐, 蓝牙停止音乐, 蓝牙上一首, 蓝牙上一曲,\n" +
