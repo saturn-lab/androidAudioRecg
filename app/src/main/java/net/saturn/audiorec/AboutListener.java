@@ -20,7 +20,6 @@ public class AboutListener implements View.OnClickListener {
 
     public AboutListener(MainActivity activity) {
         this.activity = activity;
-        this.message = message;
     }
     @Override
     public void onClick(View v) {

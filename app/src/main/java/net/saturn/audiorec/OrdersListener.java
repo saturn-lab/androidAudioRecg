@@ -10,7 +10,7 @@ import android.view.View;
 
 public class OrdersListener implements View.OnClickListener {
     public MainActivity activity;
-    static public String message = "指令列表:" +
+    static public String message = "指令列表:\n" +
             "蓝牙开机, 蓝牙拨打电话, 蓝牙打电话, 蓝牙接听电话,\n" +
             "蓝牙接电话, 蓝牙拒接, 蓝牙播放音乐, 蓝牙开始音乐,\n" +
             "蓝牙暂停音乐, 蓝牙停止音乐, 蓝牙上一首, 蓝牙上一曲,\n" +
@@ -20,14 +20,13 @@ public class OrdersListener implements View.OnClickListener {
 
     public OrdersListener(MainActivity activity) {
         this.activity = activity;
-        this.message = message;
     }
     @Override
     public void onClick(View v) {
-        if(v.getId() == R.id.about){
+        if(v.getId() == R.id.orders){
             AlertDialog.Builder dialog = new AlertDialog.Builder(this.activity);
             dialog.setTitle("指令列表")
-                    .setMessage(AboutListener.message)
+                    .setMessage(OrdersListener.message)
                     .setPositiveButton("了解", null)
                     .show();
         }

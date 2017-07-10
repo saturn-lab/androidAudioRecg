@@ -25,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
         Button about = (Button) findViewById(R.id.about);
         about.setOnClickListener(new AboutListener(this));
 
+        Button orders = (Button) findViewById(R.id.orders);
+        orders.setOnClickListener(new OrdersListener(this));
+
         askForPermission();
         TensorFlowInferenceInterface tfInterface = new TensorFlowInferenceInterface(getAssets(),
                 "file:///android_asset/asrModel.pb");
