@@ -11,7 +11,6 @@ demo (though it will run on API >= 21 devices).)
 
 https://developer.android.com/studio/
 
-
 # tensorflow inference library
 
 https://ci.tensorflow.org/view/Nightly/job/nightly-android/
@@ -20,11 +19,7 @@ download files:
 
 libandroid_tensorflow_inference_java.jar
 
-libtensorflow_inference.so packages :
-
-tensorflow-inference-debug.aar;
-
-tensorflow-inference-release.aar;
+libtensorflow_inference.so includes : tensorflow-inference-debug.aar and tensorflow-inference-release.aar;
 
 # Model  training
 using audioNet to foster a *.h5 file and frozen as *.pb file
