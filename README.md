@@ -15,7 +15,7 @@ https://developer.android.com/studio/
 
 https://ci.tensorflow.org/view/Nightly/job/nightly-android/
 
-download files:
+download two files:
 
 *libandroid_tensorflow_inference_java.jar
 
