@@ -1,10 +1,11 @@
 An Android application for speech recogniztion in ITIS and BDMI. 
 
-#requirement
+# requirement
 
-Android Studio 1.3 +
+Android Studio 1.3 + (Build tools API >= 23 is required to build the TF Android
+demo (though it will run on API >= 21 devices).)
 
-#tensorflow inference library
+# tensorflow inference library
 
 https://ci.tensorflow.org/view/Nightly/job/nightly-android/
 
@@ -18,7 +19,7 @@ libandroid_tensorflow_lib.lo
 libtensorflow_inference.so
 
 
-#frozen graph
+# frozen graph
 put ‘asrModel.pb’ in assets folder
 
 
