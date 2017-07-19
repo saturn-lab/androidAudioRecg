@@ -1,1 +1,1 @@
-An Android project for speech recogniztion experiement in ITIS and BDMI. 
+An Android application for speech recogniztion in ITIS and BDMI. 
