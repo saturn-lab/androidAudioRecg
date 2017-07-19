@@ -1,4 +1,8 @@
-An Android application for speech recogniztion in ITIS and BDMI. 
+An Android application for speech recogniztion based on TensorFlow  libaray. 
+
+see Tensorflow : An open-source software library for Machine Intelligence. 
+
+https://www.tensorflow.org
 
 # requirement
 
