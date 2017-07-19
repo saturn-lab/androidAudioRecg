@@ -1,4 +1,4 @@
-# An Android application project for speech recogniztion based on TensorFlow  libaray. 
+# An Android application project for speech recognition based on TensorFlow  library. 
 
 see Tensorflow : An open-source software library for Machine Intelligence. 
 
