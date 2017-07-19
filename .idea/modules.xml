@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AudioRec.iml" filepath="$PROJECT_DIR$/AudioRec.iml" />
       <module fileurl="file://$PROJECT_DIR$/androidAudioRecg.iml" filepath="$PROJECT_DIR$/androidAudioRecg.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
