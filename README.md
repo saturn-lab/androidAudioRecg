@@ -2,8 +2,11 @@ An Android application for speech recogniztion in ITIS and BDMI.
 
 # requirement
 
-Android Studio 1.3 + (Build tools API >= 23 is required to build the TF Android
+Android Studio 2.3 + (Build tools API >= 23 is required to build the TF Android
 demo (though it will run on API >= 21 devices).)
+
+https://developer.android.com/studio/
+
 
 # tensorflow inference library
 
@@ -13,10 +16,11 @@ download files:
 
 libandroid_tensorflow_inference_java.jar
 
-tensorflow.aar : 
+libtensorflow_inference.so packages :
 
-libandroid_tensorflow_lib.lo
-libtensorflow_inference.so
+tensorflow-inference-debug.aar;
+
+tensorflow-inference-release.aar;
 
 # Model  training
 using audioNet to foster a *.h5 file and frozen as *.pb file
