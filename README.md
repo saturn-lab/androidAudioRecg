@@ -18,6 +18,8 @@ tensorflow.aar :
 libandroid_tensorflow_lib.lo
 libtensorflow_inference.so
 
+# Model  training
+using audioNet to foster a *.h5 file and frozen as *.pb file
 
 # frozen graph
 put ‘asrModel.pb’ in assets folder
