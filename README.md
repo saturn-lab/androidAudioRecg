@@ -17,11 +17,13 @@ https://ci.tensorflow.org/view/Nightly/job/nightly-android/
 
 download files:
 
-libandroid_tensorflow_inference_java.jar
- https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/android
+*libandroid_tensorflow_inference_java.jar
 
- libtensorflow_inference.so includes : tensorflow-inference-debug.aar and tensorflow-inference-release.aar;
- https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/android/cmake
+see  https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/android
+
+*libtensorflow_inference.so includes : tensorflow-inference-debug.aar and tensorflow-inference-release.aar;
+
+see https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/android/cmake
 
 # Model  training
 using audioNet to foster a *.h5 file and frozen as *.pb file
