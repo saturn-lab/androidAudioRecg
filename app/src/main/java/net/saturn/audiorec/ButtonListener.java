@@ -64,7 +64,8 @@ public class ButtonListener implements View.OnTouchListener {
                 progress += readCount;
             }
             rec.stop();
-
+            rec.release();
+            
             return progress;
         }
 
