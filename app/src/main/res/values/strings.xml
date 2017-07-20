@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AudioRec</string>
+	<string name="about">关于</string>
+	<string name="orders">指令列表</string>
+	<string name="recording">按住录音</string>
+	<string name="result">识别结果</string>
+	<string name="organization">Tsinghua_iCenter</string>
 </resources>
