@@ -77,7 +77,8 @@ public class ButtonListener implements View.OnTouchListener {
             short[] trueBuffer = new short[length];
             System.arraycopy(buffer,0,trueBuffer,0,length);
 
-            result.setText("识别结果：" + AudioSpeechRecognition.recognize(trueBuffer));
+            if( length < 20000 ) result.setText("说的太快没听清楚");
+            else result.setText("识别结果：" + AudioSpeechRecognition.recognize(trueBuffer));
         }
 
         @Override
