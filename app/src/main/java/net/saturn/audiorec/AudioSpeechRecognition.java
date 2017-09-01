@@ -12,7 +12,8 @@ public class AudioSpeechRecognition {
     static public final int CLASS_NUM = 24;
     static public final String INPUT_NAME = "input_1";
     static public final String[] OUTPUT_NAME = new String[] {"dense_2/Softmax"};
-
+    static public final int MIN_PROB = 0.7f;
+    
     static public final String[] sentences = {
             "蓝牙开机", "蓝牙拨打电话", "蓝牙打电话", "蓝牙接听电话",
             "蓝牙接电话", "蓝牙拒接", "蓝牙播放音乐", "蓝牙开始音乐",
@@ -23,7 +24,9 @@ public class AudioSpeechRecognition {
     };
 
     public static String recognize(short[] sample) {
-        return sentences[recognizeInt(sample)];
+        int result = recognizeInt(sample);
+        if (result == -1) return "听不懂。"
+        return sentences[result];
     }
 
     public static int recognizeInt(short[] sample) {
@@ -38,6 +41,10 @@ public class AudioSpeechRecognition {
             if (result[i] > result[argmax]) {
                 argmax = i;
             }
+        }
+        
+        if (result[argmax] < MIN_PROB) {
+            return -1;
         }
         return argmax;
     }
