@@ -9,7 +9,7 @@ demo (though it will run on API >= 21 devices).)
 
 https://developer.android.com/studio/
 
-# Step 1.2 Download TensorFlow inference library
+##  '''(Skip to Step2.)''' Step 1.2 Download TensorFlow inference library
 
 https://ci.tensorflow.org/view/Nightly/job/nightly-android/
 
