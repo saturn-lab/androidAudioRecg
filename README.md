@@ -35,9 +35,9 @@ put ‘asrModel.pb’ in assets folder
 
 #  (optinal) Step 4. Run Tensorflow inference interface (already intergated into project)
 
-# Step 2 Run Android Studio, open this project: androidAudioRecg
+# Step 5. Run Android Studio, open this project: androidAudioRecg
 
----build apk file,  Install apk file in your mobile phone.
+---build apk file,  Install apk file in your mobile phone. 
 
 done!
 
