@@ -25,15 +25,19 @@ includes : tensorflow-inference-debug.aar and tensorflow-inference-release.aar;
 
 refer to: https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/android/cmake
 
-# Step 2. Training Model and Frozen graph
+# (optinal) Step 2. Training Model and Frozen graph (Work done on Project AudioNet )
 
 Using audioNet to foster a *.h5 file and frozen as *.pb file
 
-# Step 3. Put model file in android project
+# (optinal) Step 3. Put model file in android project (already)
 
 put ‘asrModel.pb’ in assets folder
 
-#  Step 4. Run Tensorflow inference interface
+#  (optinal) Step 4. Run Tensorflow inference interface (already intergated into project)
+
+# Step 2 Run Android Studio, open this project: androidAudioRecg
+
+---build apk file,  Install apk file in your mobile phone.
 
 done!
 
