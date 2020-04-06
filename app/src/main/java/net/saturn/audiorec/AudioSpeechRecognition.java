@@ -13,6 +13,7 @@ public class AudioSpeechRecognition {
     static public final String INPUT_NAME = "input_1";
     static public final String[] OUTPUT_NAME = new String[] {"dense_2/Softmax"};
     static public final float MIN_PROB = 0.7f;
+    static public final float MIN_BIAS_PROB = 0.8f;
     
     static public final String[] sentences = {
             "蓝牙开机", "蓝牙拨打电话", "蓝牙打电话", "蓝牙接听电话",
@@ -44,6 +45,9 @@ public class AudioSpeechRecognition {
         }
         
         if (result[argmax] < MIN_PROB) {
+            return -1;
+        }
+        if (result[argmax] < MIN_BIAS_PROB && argmax == 0) {
             return -1;
         }
         return argmax;

@@ -23,23 +23,23 @@
         android:textAlignment="center"
         android:textSize="30sp" />
 
+    <!--<Button-->
+        <!--android:id="@+id/recording"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:fontFamily="sans-serif"-->
+        <!--android:text="@string/recording"-->
+        <!--android:textSize="18sp" />-->
+
     <Button
         android:id="@+id/recording"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:fontFamily="sans-serif"
-        android:text="@string/recording"
-        android:textSize="18sp" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        app:srcCompat="@drawable/icenter"
+        android:background="@drawable/rec"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
@@ -54,11 +54,20 @@
         android:typeface="normal" />
 
     <Button
-        android:id="@+id/orders"
+        android:id="@+id/model"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:text="@string/model"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/orders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
         android:text="@string/orders"
         android:textSize="18sp" />
 </RelativeLayout>

@@ -14,7 +14,7 @@ public class AboutListener implements View.OnClickListener {
             "课号：01510202； 课名：智能硬件与智能系统）\n（课号：01510243； 课名： 大数据与机器智能）\n\n" +
             "智能系统实验室长期招收本校实习学生和SRT学生，从事大数据与深度学习方向科研。有意向同学请联系我们\n\n" +
             "清华大学iCenter智能系统实验室版权所有\n" +
-            "http://net.icenter.tsinghua.edu.cn";
+            "http://www.icenter.tsinghua.edu.cn/labs/ai_lab";
 
 
 
